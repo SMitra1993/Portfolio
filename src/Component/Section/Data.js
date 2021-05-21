@@ -33,20 +33,3 @@ export const homeObjTwo = {
   primary: false,
   darkText: true,
 };
-export const homeObjThree = {
-  id: "about",
-  lightBg: true,
-  lightTxt: true,
-  lightTextDesc: true,
-  topLine: " Premefeaf",
-  headline: "feefewfe ef efs fef hkefkjh efhkjsf",
-  describtion:
-    "Void elements should neither have children nor dangerouslySetInnerHTML prop. This rule applies when void elements have either children or dangerouslySetInnerHTML prop. HTML elements such as <area /> , <br /> , and <input /> are void elements which are only self-closing without any content.",
-  buttonLabel: "Work",
-  imgStart: false,
-  img: img,
-  alt: "Car",
-  dark: true,
-  primary: true,
-  darkText: true,
-};
