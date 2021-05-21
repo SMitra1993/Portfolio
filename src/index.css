@@ -16,6 +16,7 @@ code {
 }
 a:hover {
   color: #01bf71 !important;
+  text-decoration: none !important;
 }
 * {
   box-sizing: border-box;
