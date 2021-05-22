@@ -23,8 +23,8 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="discover" onClick={toggle}>
             Works
           </SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>
-            Projects
+          <SidebarLink to="tech" onClick={toggle}>
+            Tech Stack
           </SidebarLink>
         </SidebarMenu>
         <SidebarBtnWrap>

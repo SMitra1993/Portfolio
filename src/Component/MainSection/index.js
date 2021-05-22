@@ -62,7 +62,7 @@ class MainSection extends React.Component {
               transition={{ duration: 1 }}
               animate="visible"
             >
-              Welcome to my website
+              Welcome To My Website
             </motion.p>
             <Link to="about">
               <Button

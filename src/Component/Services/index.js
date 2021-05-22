@@ -12,8 +12,8 @@ import Icon1 from "../../Assests/Images/bug_fixing.svg";
 const Services = () => {
   return (
     <>
-      <ServicesContainer id="services">
-        <ServicesH1> Projects</ServicesH1>
+      <ServicesContainer id="tech">
+        <ServicesH1> Tech Stack</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
             <ServicesIcon src={Icon1} />
