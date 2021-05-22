@@ -34,11 +34,18 @@ class MainSection extends React.Component {
     }
     return this.setState({ UIData: data });
   };
+
+  changeDash = () => {
+    let dash = this.state.dash == "_" ? "" : "_";
+    return this.setState({ dash: dash });
+  };
   componentDidMount() {
-    this.interval = setInterval(() => this.changeData(), 1000);
+    this.interval = setInterval(() => this.changeData(), 2000);
+    this.intervalDash = setInterval(() => this.changeDash(), 500);
   }
   componentWillUnmount() {
     clearInterval(this.interval);
+    clearInterval(this.intervalDash);
   }
   render() {
     const fadeLeft = {
