@@ -11,7 +11,6 @@ const Contact = () => {
   };
   return (
     <>
-      {" "}
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar isOpen={isOpen} toggle={toggle} />
       <ContactCom></ContactCom>

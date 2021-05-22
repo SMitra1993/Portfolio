@@ -20,6 +20,7 @@ import {
   FaTwitter,
   FaHeart,
   FaReact,
+  FaCoffee,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -39,7 +40,7 @@ const Footer = () => {
             <SocialMediaWrap>
               <WebsiteRights>
                 Made with <FaHeart />
-                {" & "} <FaReact /> by Sourav Saha
+                {" , "} <FaReact /> {" & "} <FaCoffee /> by Sourav Saha
               </WebsiteRights>
             </SocialMediaWrap>
             <SocialMediaWrap>

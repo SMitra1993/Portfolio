@@ -83,7 +83,7 @@ class MainSection extends React.Component {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { duration: 1 } }}
               >
-                Scroll Below
+                Scroll Below To Know More
               </Button>
             </Link>
           </ColumnLeft>
