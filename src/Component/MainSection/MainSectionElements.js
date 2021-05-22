@@ -1,90 +1,95 @@
 import styled from "styled-components";
-import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import { motion } from "framer-motion";
 
-export const HeroContainer = styled.div`
+export const Section = styled.section`
   background: #0c0c0c;
-  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
-  z-index: 1;
+  height: 100vh;
+`;
 
-  :before {
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  padding: 3rem calc((100vw-1300px) / 2);
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 `;
-export const HeroBg = styled.div`
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
+
+export const ColumnLeft = styled.div`
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem 2rem;
+
+  h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  p {
+    margin: 1rem 0;
+    font-size: 4rem;
+    line-height: 1.1;
+  }
 `;
-export const Videobg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #232a34;
-`;
-export const HeroContent = styled.div`
+
+export const ColumnRight = styled.div`
   display: flex;
   justify-content: center;
-  z-index: 3;
-  max-width: 1200px;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+`;
+
+export const Button = styled(motion.button)`
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+`;
+export const Image1 = styled(motion.img)`
   position: absolute;
-  padding: 8px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-height: 250px;
+  max-width: 250px;
+  top: 1px;
+  left: 10px;
 `;
-export const HeroH1 = styled.h1`
-  color: #fff;
-  font-size: 48px;
-  text-align: center;
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
-  }
+export const Image2 = styled(motion.img)`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-height: 250px;
+  max-width: 250px;
+  top: 180px;
+  left: 10px;
 `;
-export const HeroP = styled.p`
-  margin-top: 24px;
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  max-width: 600px;
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-  }
+export const Image3 = styled(motion.img)`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-height: 250px;
+  max-width: 250px;
+  top: 350px;
+  left: 10px;
 `;
-export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-export const ArrowForward = styled(MdArrowForward)`
-  margin-left: 8px;
-  font-size: 20px;
-`;
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left: 8px;
-  font-size: 20px;
+export const Image4 = styled(motion.img)`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-height: 250px;
+  max-width: 250px;
+  top: 500px;
+  left: 10px;
 `;
