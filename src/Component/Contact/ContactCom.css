@@ -1,0 +1,20 @@
+.display-container {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  max-width: 60rem;
+}
+.form-control {
+  padding: 1.375rem 1.75rem !important;
+}
+.message-block {
+  min-height: 240px !important;
+}
+.contact-button {
+  padding: 1rem 1rem !important;
+  font-size: 1rem !important;
+  border: 2px solid #fff !important;
+  outline: none;
+  cursor: pointer !important;
+  background: #b25ce7 !important;
+  color: #fff !important;
+}

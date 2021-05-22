@@ -36,11 +36,11 @@ class MainSection extends React.Component {
   };
 
   changeDash = () => {
-    let dash = this.state.dash == "_" ? "" : "_";
+    let dash = this.state.dash === "_" ? "" : "_";
     return this.setState({ dash: dash });
   };
   componentDidMount() {
-    this.interval = setInterval(() => this.changeData(), 2000);
+    this.interval = setInterval(() => this.changeData(), 2500);
     this.intervalDash = setInterval(() => this.changeDash(), 500);
   }
   componentWillUnmount() {
