@@ -9,6 +9,8 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconsLink,
+  CopyRight,
+  TermsRight,
 } from "./FooterElements";
 import {
   FaFacebook,
@@ -37,8 +39,7 @@ const Footer = () => {
             <SocialMediaWrap>
               <WebsiteRights>
                 Made with <FaHeart />
-                {" & "} <FaReact /> by Sourav Saha © Copyright{" "}
-                {new Date().getFullYear()}
+                {" & "} <FaReact /> by Sourav Saha
               </WebsiteRights>
             </SocialMediaWrap>
             <SocialMediaWrap>
@@ -79,6 +80,10 @@ const Footer = () => {
                   <FaInstagram />
                 </SocialIconsLink>
               </SocialIcons>
+            </SocialMediaWrap>
+            <SocialMediaWrap>
+              <CopyRight>© Copyright {new Date().getFullYear()}</CopyRight>
+              <TermsRight>Terms and Condition applied</TermsRight>
             </SocialMediaWrap>
           </SocialMedia>
         </FooterWrap>
