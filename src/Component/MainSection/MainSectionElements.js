@@ -65,51 +65,78 @@ export const Image1 = styled(motion.img)`
   position: absolute;
   height: 100%;
   width: 100%;
-  max-height: 250px;
+  max-height: 300px;
   max-width: 250px;
   top: 1px;
-  left: 10px;
-  @media screen and (max-width: 488px) {
+  left: 60%;
+
+  @media screen and (max-width: 768px) {
+    left: 23%;
+  }
+  @media screen and (max-width: 480px) {
     height: 80%;
     width: 80%;
+    max-height: 250px;
+    left: 10px;
   }
 `;
 export const Image2 = styled(motion.img)`
   position: absolute;
   height: 100%;
   width: 100%;
-  max-height: 250px;
+  max-height: 300px;
   max-width: 250px;
-  top: 180px;
-  left: 10px;
-  @media screen and (max-width: 488px) {
+  top: 225px;
+  left: 60%;
+
+  @media screen and (max-width: 968px) {
+    left: 55%;
+  }
+  @media screen and (max-width: 768px) {
+    left: 23%;
+  }
+  @media screen and (max-width: 480px) {
     height: 80%;
     width: 80%;
+    max-height: 250px;
+    left: 10px;
   }
 `;
 export const Image3 = styled(motion.img)`
   position: absolute;
   height: 100%;
   width: 100%;
-  max-height: 250px;
+  max-height: 300px;
   max-width: 250px;
-  top: 350px;
-  left: 10px;
-  @media screen and (max-width: 488px) {
+  top: 420px;
+  left: 60%;
+
+  @media screen and (max-width: 768px) {
+    left: 23%;
+  }
+  @media screen and (max-width: 480px) {
     height: 80%;
     width: 80%;
+    max-height: 250px;
+    left: 10px;
   }
 `;
 export const Image4 = styled(motion.img)`
   position: absolute;
   height: 100%;
   width: 100%;
-  max-height: 250px;
+  max-height: 300px;
   max-width: 250px;
-  top: 500px;
-  left: 10px;
-  @media screen and (max-width: 488px) {
+  top: 600px;
+  left: 60%;
+
+  @media screen and (max-width: 768px) {
+    left: 23%;
+  }
+  @media screen and (max-width: 480px) {
     height: 80%;
     width: 80%;
+    max-height: 250px;
+    left: 10px;
   }
 `;

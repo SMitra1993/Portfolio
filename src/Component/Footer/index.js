@@ -3,11 +3,6 @@ import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
   FooterWrap,
-  FooterLinks,
-  FooterLinkWrapper,
-  FooterItems,
-  FooterTitle,
-  FooterLink,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
