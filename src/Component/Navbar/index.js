@@ -51,6 +51,9 @@ const Navbar = ({ toggle, onContact }) => {
                 <NavItem>
                   <NavLinks to="tech">Tech Stack</NavLinks>
                 </NavItem>
+                <NavItem>
+                  <NavLinks to="project">Timeline</NavLinks>
+                </NavItem>
               </Navmenu>
               <NavBtn>
                 <NavBtnLink to="/contact"> Say Hello</NavBtnLink>

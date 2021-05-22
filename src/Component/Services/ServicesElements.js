@@ -38,6 +38,7 @@ export const TechCard = styled.div`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2 ease-in-out;
 
+  animation: cd-bounce-2-inverse 0.6s;
   &:hover {
     transform: scale(1.02);
     transition: all 0.2 ease-in-out;

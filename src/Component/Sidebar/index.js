@@ -27,6 +27,9 @@ const Sidebar = ({ isOpen, toggle, onContact }) => {
             <SidebarLink to="tech" onClick={toggle}>
               Tech Stack
             </SidebarLink>
+            <SidebarLink to="project" onClick={toggle}>
+              Timeline
+            </SidebarLink>
           </SidebarMenu>
           <SidebarBtnWrap>
             <SidebarRoute to="/contact"> Say Hello</SidebarRoute>
