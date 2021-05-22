@@ -131,3 +131,27 @@ export const ImgHead = styled.img`
     cursor: pointer;
   }
 `;
+export const DownloadButton = styled.a`
+  padding: 1rem 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  border: 2px solid #fff;
+  margin-bottom: 1rem;
+  background-color: ${({ darkText }) => (darkText ? "#b25ce7" : "#fff")};
+  color: ${({ darkText }) => (darkText ? "#fff " : "#b25ce7 ")};
+
+  @media screen and (max-width: 480px) {
+    padding: 0.5rem 0.5rem;
+  }
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: ${({ darkText }) =>
+      darkText ? "#b25ce7 !important" : "#fff !important"};
+    background: ${({ darkText }) => (darkText ? "#fff" : "#b25ce7")};
+  }
+`;

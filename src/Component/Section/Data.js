@@ -1,6 +1,8 @@
 import img from "../../Assests/Images/hello.svg";
 import img2 from "../../Assests/Images/Web_developer.svg";
 import imgTcs from "../../Assests/Images/tcs.png";
+import Resume from "../../Assests/Resume/Resume.pdf";
+
 export const homeObjOne = {
   id: "about",
   lightBg: false,
@@ -18,6 +20,7 @@ export const homeObjOne = {
   primary: true,
   darkText: false,
   imageHeading: false,
+  resumePath: Resume,
 };
 export const homeObjTwo = {
   id: "discover",
@@ -29,7 +32,7 @@ export const homeObjTwo = {
   describtion:
     "#Involved in developing  web components using React.js and Vue.js.",
   describtion2:
-    "#Contribute to the technical design and development of REST API using Node.js to fetch data from database.",
+    "#Contributed to the technical design and development of REST API using Node.js to fetch data from database.",
   buttonLabel: "Go to top",
   imgStart: false,
   img: img2,
@@ -38,4 +41,5 @@ export const homeObjTwo = {
   primary: false,
   darkText: true,
   imageHeading: imgTcs,
+  resumePath: false,
 };

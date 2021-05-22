@@ -16,6 +16,7 @@ import {
   ImgWrapHead,
   ImgHead,
   HeadingImg,
+  DownloadButton,
 } from "./sectionElements";
 
 const InfoSection = ({
@@ -35,6 +36,7 @@ const InfoSection = ({
   primary,
   imageHeading,
   describtion2,
+  resumePath,
 }) => {
   return (
     <>
@@ -61,19 +63,42 @@ const InfoSection = ({
                 )}
 
                 <BtnWrap>
-                  <Button
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
+                  {resumePath ? (
+                    <>
+                      <div>
+                        <DownloadButton
+                          href={resumePath}
+                          target="_blank"
+                          darkText="true"
+                          download
+                        >
+                          {buttonLabel}
+                        </DownloadButton>
+                        <DownloadButton
+                          href="https://www.linkedin.com/in/sourav-saha-66b37b92/"
+                          target="_blank"
+                        >
+                          Connect in Linkedin
+                        </DownloadButton>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <Button
+                        to="home"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
+                        primary={primary ? 1 : 0}
+                        dark={dark ? 1 : 0}
+                        dark2={dark2 ? 1 : 0}
+                      >
+                        {buttonLabel}
+                      </Button>
+                    </>
+                  )}
                 </BtnWrap>
               </TextWrapper>
             </Column1>

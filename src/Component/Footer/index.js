@@ -17,6 +17,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaHeart,
+  FaReact,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -30,27 +31,48 @@ const Footer = () => {
           <SocialMedia>
             <SocialMediaWrap>
               <SocialLogo to="/" onClick={toggleHome}>
-                fefe
+                Sourav
               </SocialLogo>
+            </SocialMediaWrap>
+            <SocialMediaWrap>
               <WebsiteRights>
-                Made with <FaHeart /> by Sourav Saha © Copyright{" "}
+                Made with <FaHeart />
+                {" & "} <FaReact /> by Sourav Saha © Copyright{" "}
                 {new Date().getFullYear()}
               </WebsiteRights>
+            </SocialMediaWrap>
+            <SocialMediaWrap>
               <SocialIcons>
-                <SocialIconsLink href="/" target="_blank" aria-label="Facebook">
+                <SocialIconsLink
+                  href="https://www.facebook.com/sourav.saha.9484/"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
                   <FaFacebook />
                 </SocialIconsLink>
-                <SocialIconsLink href="/" target="_blank" aria-label="Linkedln">
+                <SocialIconsLink
+                  href="https://www.linkedin.com/in/sourav-saha-66b37b92/"
+                  target="_blank"
+                  aria-label="Linkedln"
+                >
                   <FaLinkedin />
                 </SocialIconsLink>
-                <SocialIconsLink href="/" target="_blank" aria-label="Github">
+                <SocialIconsLink
+                  href="https://github.com/SouravSaha101"
+                  target="_blank"
+                  aria-label="Github"
+                >
                   <FaGithub />
                 </SocialIconsLink>
-                <SocialIconsLink href="/" target="_blank" aria-label="Twitter">
+                <SocialIconsLink
+                  href="https://twitter.com/ChillAdmi_"
+                  target="_blank"
+                  aria-label="Twitter"
+                >
                   <FaTwitter />
                 </SocialIconsLink>
                 <SocialIconsLink
-                  href="/"
+                  href="https://www.instagram.com/chill.admi/"
                   target="_blank"
                   aria-label="Instagram"
                 >

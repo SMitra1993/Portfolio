@@ -64,7 +64,7 @@ export const SocialMedia = styled.section`
 `;
 export const SocialMediaWrap = styled.div`
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
   max-width: 1100px;
   margin: 40px auto 0 auto;
@@ -95,7 +95,13 @@ export const WebsiteRights = styled.small`
   margin-bottom: 16px;
 `;
 
-export const SocialIconsLink = styled.div`
+export const SocialIconsLink = styled.a`
   color: #fff;
-  font-size: 24px;
+  font-size: 35px;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #010606 !important;
+    transform: scale(1.05);
+    font-size: 45px;
+  }
 `;

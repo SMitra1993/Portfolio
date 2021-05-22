@@ -1,37 +1,52 @@
 import React from "react";
 import {
-  ServicesContainer,
-  ServicesH1,
-  ServicesWrapper,
-  ServicesCard,
-  ServicesIcon,
-  ServicesH2,
-  ServicesP,
+  TechContainer,
+  TechH1,
+  TechWrapper,
+  TechCard,
+  TechIcon,
+  TechH2,
+  TechLi,
 } from "./ServicesElements";
-import Icon1 from "../../Assests/Images/bug_fixing.svg";
+import tech3 from "../../Assests/Images/bug_fixing.svg";
+import tech2 from "../../Assests/Images/tech-2.svg";
+import tech1 from "../../Assests/Images/tech-1.svg";
 const Services = () => {
   return (
     <>
-      <ServicesContainer id="tech">
-        <ServicesH1> Tech Stack</ServicesH1>
-        <ServicesWrapper>
-          <ServicesCard>
-            <ServicesIcon src={Icon1} />
-            <ServicesH2> One</ServicesH2>
-            <ServicesP> ecsceccscseccse w dwd w dwadaw</ServicesP>
-          </ServicesCard>
-          <ServicesCard>
-            <ServicesIcon src={Icon1} />
-            <ServicesH2> Two</ServicesH2>
-            <ServicesP> iuf ry er reb ryevew</ServicesP>
-          </ServicesCard>
-          <ServicesCard>
-            <ServicesIcon src={Icon1} />
-            <ServicesH2> Three</ServicesH2>
-            <ServicesP> ebv rvev ryee yvbraw</ServicesP>
-          </ServicesCard>
-        </ServicesWrapper>
-      </ServicesContainer>
+      <TechContainer id="tech">
+        <TechH1> Tech Stack</TechH1>
+        <TechWrapper>
+          <TechCard>
+            <TechIcon src={tech1} />
+            <TechH2> Front End</TechH2>
+            <TechLi> HTML5 </TechLi>
+            <TechLi> CSS </TechLi>
+            <TechLi> Javascript </TechLi>
+            <TechLi> React </TechLi>
+            <TechLi> Vue.js </TechLi>
+          </TechCard>
+          <TechCard>
+            <TechIcon src={tech2} />
+            <TechH2> Back End</TechH2>
+            <TechLi> Node.js </TechLi>
+            <TechLi> Express </TechLi>
+            <TechLi> Rest API </TechLi>
+            <TechLi> Sql Server </TechLi>
+            <TechLi> MongoDB </TechLi>
+          </TechCard>
+          <TechCard>
+            <TechIcon src={tech3} />
+            <TechH2>Dev Tools</TechH2>
+            <TechLi> Git</TechLi>
+            <TechLi> Jira</TechLi>
+            <TechLi> Heroku</TechLi>
+            <TechLi> Firebase</TechLi>
+            <TechLi> Bootstrap</TechLi>
+            <TechLi> {"Pen & Paper"}</TechLi>
+          </TechCard>
+        </TechWrapper>
+      </TechContainer>
     </>
   );
 };

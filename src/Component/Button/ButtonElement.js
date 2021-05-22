@@ -16,7 +16,6 @@ export const Button = styled(Link)`
   text-decoration: none;
   border: 2px solid #fff;
   outline: none;
-  cursor: pointer;
   color: #fff;
   &:hover {
     transition: all 0.2s ease-in-out;
