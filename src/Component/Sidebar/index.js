@@ -9,28 +9,34 @@ import {
   SidebarLink,
   SidebarBtnWrap,
 } from "./SidebarElemnts";
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ isOpen, toggle, onContact }) => {
   return (
     <SidebarContainer isOpen={isOpen} toggle={toggle}>
       <Icon onClick={toggle}>
         <CloseIcon></CloseIcon>
       </Icon>
-      <SidebarWrapper>
-        <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
-            About
-          </SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>
-            Works
-          </SidebarLink>
-          <SidebarLink to="tech" onClick={toggle}>
-            Tech Stack
-          </SidebarLink>
-        </SidebarMenu>
+      {onContact ? (
+        <SidebarWrapper>
+          <SidebarMenu>
+            <SidebarLink to="about" onClick={toggle}>
+              About
+            </SidebarLink>
+            <SidebarLink to="discover" onClick={toggle}>
+              Works
+            </SidebarLink>
+            <SidebarLink to="tech" onClick={toggle}>
+              Tech Stack
+            </SidebarLink>
+          </SidebarMenu>
+          <SidebarBtnWrap>
+            <SidebarRoute to="/contact"> Say Hello</SidebarRoute>
+          </SidebarBtnWrap>
+        </SidebarWrapper>
+      ) : (
         <SidebarBtnWrap>
-          <SidebarRoute to="/contact"> Say Hello</SidebarRoute>
+          <SidebarRoute to="/"> Home</SidebarRoute>
         </SidebarBtnWrap>
-      </SidebarWrapper>
+      )}
     </SidebarContainer>
   );
 };

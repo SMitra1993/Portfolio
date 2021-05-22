@@ -12,7 +12,7 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./Navbarelements";
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, onContact }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -39,20 +39,24 @@ const Navbar = ({ toggle }) => {
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
-          <Navmenu>
-            <NavItem>
-              <NavLinks to="about">About</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="discover">Works</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="tech">Tech Stack</NavLinks>
-            </NavItem>
-          </Navmenu>
-          <NavBtn>
-            <NavBtnLink to="/contact"> Say Hello</NavBtnLink>
-          </NavBtn>
+          {onContact ? (
+            <>
+              <Navmenu>
+                <NavItem>
+                  <NavLinks to="about">About</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks to="discover">Works</NavLinks>
+                </NavItem>
+                <NavItem>
+                  <NavLinks to="tech">Tech Stack</NavLinks>
+                </NavItem>
+              </Navmenu>
+              <NavBtn>
+                <NavBtnLink to="/contact"> Say Hello</NavBtnLink>
+              </NavBtn>
+            </>
+          ) : null}
         </NavbarContainer>
       </Nav>
     </>

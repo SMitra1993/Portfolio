@@ -14,8 +14,8 @@ const Home = () => {
   };
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar isOpen={isOpen} toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} onContact={true} />
+      <Navbar isOpen={isOpen} toggle={toggle} onContact={true} />
       <MainSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
