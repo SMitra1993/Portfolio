@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactCom.css";
-
+import { Link } from "react-router-dom";
 const ContactCom = () => {
   return (
     <div>
@@ -69,13 +69,14 @@ const ContactCom = () => {
                   <div className="clearfix"></div>
                   <div className="col-lg-12 text-center">
                     <div id="success"></div>
-                    <button
+                    <Link
+                      to="/thankyou"
                       id="sendMessageButton"
                       className="btn text-uppercase contact-button"
                       type="submit"
                     >
                       Contact
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </form>
