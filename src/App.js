@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./Pages";
-import Signin from "./Pages/signin";
+import contact from "./Pages/contact";
 
 class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
         <Route exact path="/" component={Home} />
-        <Route exact path="/signin" component={Signin} />
+        <Route exact path="/contact" component={contact} />
       </BrowserRouter>
     );
   }

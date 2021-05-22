@@ -34,7 +34,7 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <Navlogo to="/" onClick={toggleHome}>
-            hgj
+            Sourav
           </Navlogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -44,17 +44,14 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="about">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">Discover</NavLinks>
+              <NavLinks to="discover">Works</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services">Services</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="signup">Sign up</NavLinks>
+              <NavLinks to="services">Projects</NavLinks>
             </NavItem>
           </Navmenu>
           <NavBtn>
-            <NavBtnLink to="/signin"> Sign in</NavBtnLink>
+            <NavBtnLink to="/contact"> Say Hello</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

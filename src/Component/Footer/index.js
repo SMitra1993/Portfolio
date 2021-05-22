@@ -32,52 +32,6 @@ const Footer = () => {
     <>
       <FooterContainer>
         <FooterWrap>
-          <FooterLinks>
-            <FooterLinkWrapper>
-              <FooterItems>
-                <FooterTitle> Hello </FooterTitle>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-              </FooterItems>
-              <FooterItems>
-                <FooterTitle> Hello </FooterTitle>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-              </FooterItems>
-            </FooterLinkWrapper>
-            <FooterLinkWrapper>
-              <FooterItems>
-                <FooterTitle> Hello </FooterTitle>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-              </FooterItems>
-              <FooterItems>
-                <FooterTitle> Hello </FooterTitle>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-                <FooterLink to="/signin"> About us</FooterLink>
-              </FooterItems>
-            </FooterLinkWrapper>
-          </FooterLinks>
           <SocialMedia>
             <SocialMediaWrap>
               <SocialLogo to="/" onClick={toggleHome}>

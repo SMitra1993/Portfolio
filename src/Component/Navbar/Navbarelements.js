@@ -79,7 +79,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #b25ce7;
   }
 `;
 
@@ -93,7 +93,7 @@ export const NavBtn = styled.nav`
 export const NavBtnLink = styled(LinkR)`
   padding: 0.5rem;
   border-radius: 50px;
-  background: #01bf71;
+  background: #b25ce7;
   white-space: nowrap;
   color: #010606;
   font-size: 16px;

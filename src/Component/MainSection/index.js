@@ -32,7 +32,7 @@ const MainSection = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            Welcome to my website
+            Hello!!!
           </motion.h1>
           <motion.p
             variants={fadeLeft}
@@ -40,7 +40,7 @@ const MainSection = () => {
             transition={{ duration: 1 }}
             animate="visible"
           >
-            Text to fill{" "}
+            Welcome to my website
           </motion.p>
           <Link to="about">
             <Button
@@ -83,9 +83,9 @@ const MainSection = () => {
             }}
             drag
             dragConstraints={{
-              top: 0,
-              left: 50,
-              right: 250,
+              top: -50,
+              left: -50,
+              right: 50,
               bottom: 50,
             }}
             initial={{ opacity: 0, x: 100 }}
