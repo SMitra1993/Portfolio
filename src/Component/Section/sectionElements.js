@@ -73,6 +73,18 @@ export const Heading = styled.h1`
   }
 `;
 
+export const HeadingImg = styled.h1`
+  margin-bottom: 15px;
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 300;
+  color: ${({ lightTxt }) => (lightTxt ? "#f7f8fa" : "#010606")};
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
+`;
+
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
@@ -92,6 +104,23 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2 ease-in-out;
+    cursor: pointer;
+  }
+`;
+
+export const ImgWrapHead = styled.div`
+  max-width: 555px;
+  height: 100%;
+`;
+
+export const ImgHead = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;

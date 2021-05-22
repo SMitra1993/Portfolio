@@ -91,14 +91,13 @@ export const NavBtn = styled.nav`
   }
 `;
 export const NavBtnLink = styled(LinkR)`
-  padding: 0.5rem;
-  border-radius: 50px;
-  background: #b25ce7;
-  white-space: nowrap;
-  color: #010606;
-  font-size: 16px;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #fff;
   outline: none;
-  border: none;
+  cursor: pointer;
+  background: #b25ce7;
+  color: #fff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;

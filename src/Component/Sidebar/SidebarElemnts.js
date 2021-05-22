@@ -66,15 +66,13 @@ export const SidebarMenu = styled.ul`
 `;
 
 export const SidebarRoute = styled(LinkR)`
-  border-radius: 50px;
-  background: #b25ce7;
-  white-space: nowrap;
-  padding: 16px 64px;
-  color: #010606;
-  font-size: 16px;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #fff;
   outline: none;
-  borber: none;
   cursor: pointer;
+  background: transparent;
+  color: #fff;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 

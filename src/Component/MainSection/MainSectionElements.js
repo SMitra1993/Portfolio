@@ -68,10 +68,10 @@ export const Image1 = styled(motion.img)`
   max-height: 300px;
   max-width: 250px;
   top: 1px;
-  left: 60%;
+  left: 50%;
 
   @media screen and (max-width: 768px) {
-    left: 23%;
+    left: 11%;
   }
   @media screen and (max-width: 480px) {
     height: 80%;
@@ -87,13 +87,13 @@ export const Image2 = styled(motion.img)`
   max-height: 300px;
   max-width: 250px;
   top: 225px;
-  left: 60%;
+  left: 50%;
 
   @media screen and (max-width: 968px) {
     left: 55%;
   }
   @media screen and (max-width: 768px) {
-    left: 23%;
+    left: 11%;
   }
   @media screen and (max-width: 480px) {
     height: 80%;
@@ -108,11 +108,11 @@ export const Image3 = styled(motion.img)`
   width: 100%;
   max-height: 300px;
   max-width: 250px;
-  top: 420px;
-  left: 60%;
+  top: 400px;
+  left: 50%;
 
   @media screen and (max-width: 768px) {
-    left: 23%;
+    left: 11%;
   }
   @media screen and (max-width: 480px) {
     height: 80%;
@@ -127,11 +127,11 @@ export const Image4 = styled(motion.img)`
   width: 100%;
   max-height: 300px;
   max-width: 250px;
-  top: 600px;
-  left: 60%;
+  top: 615px;
+  left: 50%;
 
   @media screen and (max-width: 768px) {
-    left: 23%;
+    left: 11%;
   }
   @media screen and (max-width: 480px) {
     height: 80%;

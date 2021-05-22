@@ -13,6 +13,9 @@ import {
   Column2,
   ImgWrap,
   Img,
+  ImgWrapHead,
+  ImgHead,
+  HeadingImg,
 } from "./sectionElements";
 
 const InfoSection = ({
@@ -30,6 +33,8 @@ const InfoSection = ({
   dark2,
   dark,
   primary,
+  imageHeading,
+  describtion2,
 }) => {
   return (
     <>
@@ -39,8 +44,22 @@ const InfoSection = ({
             <Column1>
               <TextWrapper>
                 <TopLine> {topLine}</TopLine>
-                <Heading lightTxt={lightTxt}> {headline}</Heading>
-                <Subtitle darkText={darkText}>{describtion}</Subtitle>
+                {imageHeading ? (
+                  <>
+                    <ImgWrapHead>
+                      <ImgHead src={imageHeading} alt={alt} />
+                      <HeadingImg lightTxt={lightTxt}> {headline}</HeadingImg>
+                    </ImgWrapHead>
+                    <Subtitle darkText={darkText}>{describtion}</Subtitle>
+                    <Subtitle darkText={darkText}>{describtion2}</Subtitle>
+                  </>
+                ) : (
+                  <>
+                    <Heading lightTxt={lightTxt}> {headline}</Heading>
+                    <Subtitle darkText={darkText}>{describtion}</Subtitle>
+                  </>
+                )}
+
                 <BtnWrap>
                   <Button
                     to="home"

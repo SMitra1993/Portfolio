@@ -1,5 +1,6 @@
-import img from "../../Assests/Images/coder.svg";
+import img from "../../Assests/Images/hello.svg";
 import img2 from "../../Assests/Images/Web_developer.svg";
+import imgTcs from "../../Assests/Images/tcs.png";
 export const homeObjOne = {
   id: "about",
   lightBg: false,
@@ -16,6 +17,7 @@ export const homeObjOne = {
   dark: true,
   primary: true,
   darkText: false,
+  imageHeading: false,
 };
 export const homeObjTwo = {
   id: "discover",
@@ -23,13 +25,17 @@ export const homeObjTwo = {
   lightTxt: false,
   lightTextDesc: false,
   topLine: "Work experience",
-  headline: "dsds gwdvkjsf",
-  describtion: "Void elements shefout any content.",
-  buttonLabel: "good",
+  headline: "Web Developer (2019 - Present) ",
+  describtion:
+    "#Involved in developing  web components using React.js and Vue.js.",
+  describtion2:
+    "#Contribute to the technical design and development of REST API using Node.js to fetch data from database.",
+  buttonLabel: "Go to top",
   imgStart: false,
   img: img2,
   alt: "cs",
   dark: false,
   primary: false,
   darkText: true,
+  imageHeading: imgTcs,
 };
