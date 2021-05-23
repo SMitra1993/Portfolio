@@ -18,6 +18,7 @@ import {
   HeadingImg,
   DownloadButton,
 } from "./sectionElements";
+import { useViewportScroll, useTransform } from "framer-motion";
 
 const InfoSection = ({
   lightBg,
@@ -38,6 +39,8 @@ const InfoSection = ({
   describtion2,
   resumePath,
 }) => {
+  const { scrollYProgress } = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1.4]);
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -128,7 +131,7 @@ const InfoSection = ({
                     y: 0,
                     transition: { duration: 1 },
                   }}
-                  data-aos="fade-left"
+                  style={{ scale }}
                 />
               </ImgWrap>
             </Column2>

@@ -68,7 +68,6 @@ const ContactCom = () => {
                   </div>
                   <div className="clearfix"></div>
                   <div className="col-lg-12 text-center">
-                    <div id="success"></div>
                     <Link
                       to="/thankyou"
                       id="sendMessageButton"
