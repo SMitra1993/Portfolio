@@ -23,7 +23,13 @@ const Home = () => {
     },
   };
   return (
-    <motion.div initial="out" animate="in" exit="out" variants={aminationOne}>
+    <motion.div
+      key="2"
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={aminationOne}
+    >
       <Sidebar isOpen={isOpen} toggle={toggle} onContact={true} />
       <Navbar isOpen={isOpen} toggle={toggle} onContact={true} />
       <MainSection />

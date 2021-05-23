@@ -10,9 +10,9 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <AnimatePresence>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/contact" component={contact} />
-          <Route exact path="/thankyou" component={thankyou} />
+          <Route key="home" exact path="/" component={Home} />
+          <Route key="contact" exact path="/contact" component={contact} />
+          <Route key="thankyou" exact path="/thankyou" component={thankyou} />
         </AnimatePresence>
       </BrowserRouter>
     );

@@ -20,7 +20,13 @@ const Contact = () => {
     },
   };
   return (
-    <motion.div initial="out" animate="in" exit="out" variants={aminationOne}>
+    <motion.div
+      key="1"
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={aminationOne}
+    >
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar isOpen={isOpen} toggle={toggle} />
       <ContactCom></ContactCom>

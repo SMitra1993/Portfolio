@@ -13,7 +13,13 @@ const Thankyou = () => {
     },
   };
   return (
-    <motion.div initial="out" animate="in" exit="out" variants={aminationOne}>
+    <motion.div
+      key="3"
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={aminationOne}
+    >
       <Conformation></Conformation>
       <Footer />
     </motion.div>

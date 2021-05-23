@@ -23,7 +23,7 @@ class MainSection extends React.Component {
   constructor() {
     super();
 
-    this.state = { UIData: "", dash: "", data: 0 };
+    this.state = { UIData: "Hello", dash: "_", data: 0 };
   }
   changeData = () => {
     let data = UIData[this.state.data];
