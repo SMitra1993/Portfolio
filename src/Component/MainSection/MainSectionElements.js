@@ -14,10 +14,6 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   height: 100vh;
   padding: 3rem calc((100vw-1300px) / 2);
-
-  // @media screen and (max-width: 768px) {
-  //   grid-template-columns: 1fr;
-  // }
 `;
 
 export const ColumnLeft = styled.div`

@@ -1,0 +1,31 @@
+.bg-back {
+  background-color: rgb(12, 12, 12);
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-model {
+  border: 5px solid #fff;
+  color: #fff;
+  height: 20rem;
+  width: 25rem;
+  padding: 2rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 600px) {
+  .box-model {
+    width: 15rem;
+    padding: 1.5rem;
+    height: 12rem;
+  }
+}
+.img-height {
+  height: 65% !important;
+  margin-bottom: 2rem;
+}
+
+.loading-text {
+}
