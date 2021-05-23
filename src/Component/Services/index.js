@@ -11,12 +11,16 @@ import {
 import tech3 from "../../Assests/Images/bug_fixing.svg";
 import tech2 from "../../Assests/Images/tech-2.svg";
 import tech1 from "../../Assests/Images/tech-1.svg";
+import { useViewportScroll, useTransform } from "framer-motion";
+
 const Services = () => {
+  const { scrollYProgress } = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1.6]);
   return (
     <>
       <TechContainer id="tech">
         <TechH1> Tech Stack</TechH1>
-        <TechWrapper>
+        <TechWrapper style={{ scale }}>
           <TechCard>
             <TechIcon src={tech1} />
             <TechH2> Front End</TechH2>

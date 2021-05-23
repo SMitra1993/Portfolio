@@ -1,14 +1,22 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const TechContainer = styled.div`
-  padding: 5rem;
+  padding: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 14rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding-bottom: 18rem;
+  }
 `;
-export const TechWrapper = styled.div`
+export const TechWrapper = styled(motion.div)`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -26,15 +34,15 @@ export const TechWrapper = styled.div`
   }
 `;
 
-export const TechCard = styled.div`
+export const TechCard = styled(motion.div)`
   background: #fff;
-  height: 28rem;
+  height: 26rem;
   display: flex;
   flex-direction: column;
   justify-contet: flex-start;
   align-items: center;
   border-radius: 10px;
-  padding: 30px;
+  padding: 15px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2 ease-in-out;
 
