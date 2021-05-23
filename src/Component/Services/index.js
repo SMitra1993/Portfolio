@@ -38,12 +38,12 @@ const Services = () => {
           <TechCard>
             <TechIcon src={tech3} />
             <TechH2>Dev Tools</TechH2>
+            <TechLi> npm</TechLi>
             <TechLi> Git</TechLi>
             <TechLi> Jira</TechLi>
             <TechLi> Heroku</TechLi>
-            <TechLi> Firebase</TechLi>
+            <TechLi> Postman</TechLi>
             <TechLi> Bootstrap</TechLi>
-            <TechLi> {"Pen & Paper"}</TechLi>
           </TechCard>
         </TechWrapper>
       </TechContainer>
