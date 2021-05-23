@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const InfoContainer = styled.div`
   color: #fff;
@@ -103,7 +104,7 @@ export const ImgWrap = styled.div`
   height: 100%;
 `;
 
-export const Img = styled.img`
+export const Img = styled(motion.img)`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
@@ -120,7 +121,7 @@ export const ImgWrapHead = styled.div`
   height: 100%;
 `;
 
-export const ImgHead = styled.img`
+export const ImgHead = styled(motion.img)`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;

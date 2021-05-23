@@ -49,7 +49,19 @@ const InfoSection = ({
                 {imageHeading ? (
                   <>
                     <ImgWrapHead>
-                      <ImgHead src={imageHeading} alt={alt} />
+                      <ImgHead
+                        src={imageHeading}
+                        alt={alt}
+                        whileTap={{
+                          scale: 0.5,
+                        }}
+                        initial={{ opacity: 0, y: -100 }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                          transition: { duration: 1 },
+                        }}
+                      />
                       <HeadingImg lightTxt={lightTxt}> {headline}</HeadingImg>
                     </ImgWrapHead>
                     <Subtitle darkText={darkText}>{describtion}</Subtitle>
@@ -104,7 +116,20 @@ const InfoSection = ({
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img
+                  src={img}
+                  alt={alt}
+                  whileTap={{
+                    scale: 0.5,
+                  }}
+                  initial={{ opacity: 0, y: -100 }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1 },
+                  }}
+                  data-aos="fade-left"
+                />
               </ImgWrap>
             </Column2>
           </InfoRow>
